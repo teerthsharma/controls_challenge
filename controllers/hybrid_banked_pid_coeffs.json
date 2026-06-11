@@ -1,0 +1,48 @@
+{
+  "__global__": {
+    "p": 0.10287990956564906,
+    "i": 0.1385870716869035,
+    "d": 0.003758669429706888,
+    "ff": 0.09762063172304346,
+    "roll": -0.06591918666101113,
+    "future": 0.01937456611546685,
+    "prev": 0.04642306192453226,
+    "safety_fallback": 0.1297274659070753,
+    "adaptive": 0.0,
+    "clutch_d_scale": 0.0,
+    "chaos_action_scale": 0.18,
+    "p_chaos_drop": 0.18,
+    "i_chaos_drop": 0.25,
+    "d_chaos_lift": 0.10,
+    "ff_plan_lift": 0.06,
+    "road_damping": 0.08,
+    "s3_topology": 0.12,
+    "s3_error_push": 0.16,
+    "s3_chaos_track": 0.08,
+    "s3_curvature_damping": 0.20,
+    "integral_limit": 8.0
+  },
+  "banks": {
+    "bank_00": {"signature": [33, 321, 325, 1053, -30, 0, 0, -287], "coeffs": {}},
+    "bank_01": {"signature": [34, 191, 259, 274, 0, 1, 0, -157], "coeffs": {}},
+    "bank_02": {"signature": [-1, -259, 834, -4, 0, 0, 0, 257], "coeffs": {}},
+    "bank_03": {"signature": [12, 234, 656, 387, 0, 1, 0, -222], "coeffs": {}},
+    "bank_04": {"signature": [637, 160, 914, -7, 316, 4, 0, 477], "coeffs": {}},
+    "bank_05": {"signature": [-102, 164, 809, -34, 0, 10, 1, -266], "coeffs": {}},
+    "bank_06": {"signature": [615, 157, 911, -3, 0, 0, 0, 458], "coeffs": {}},
+    "bank_07": {"signature": [97, 264, 472, -12, 0, -8, 0, -167], "coeffs": {}},
+    "bank_08": {"signature": [-626, -529, 744, 17, 0, 3, 0, -97], "coeffs": {}},
+    "bank_09": {"signature": [-642, -488, 743, 23, 0, -3, 0, -154], "coeffs": {}},
+    "bank_10": {"signature": [-737, -354, 759, 19, 0, -7, 0, -383], "coeffs": {}},
+    "bank_11": {"signature": [-631, -517, 743, 1, 0, -5, 0, -114], "coeffs": {}},
+    "bank_12": {"signature": [-16, -124, 841, -36, 0, -3, 0, 107], "coeffs": {}},
+    "bank_13": {"signature": [-5, 33, 334, -182, 81, -1, 0, -38], "coeffs": {}},
+    "bank_14": {"signature": [0, 173, 0, 0, 0, 0, 0, -173], "coeffs": {}},
+    "bank_15": {"signature": [12, 165, 251, -1969, 0, -3, 0, -153], "coeffs": {}}
+  },
+  "topology_banks": {},
+  "metadata": {
+    "source": "seeded from padic_transformer_pid_coeffs.json with bounded AETHER/S3/Hamilton adaptive scales",
+    "final_submission_shape": "controller_plus_compact_json"
+  }
+}
