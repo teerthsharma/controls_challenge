@@ -1,0 +1,8661 @@
+{
+  "__global__": {
+    "p": 0.09841782682926085,
+    "i": 0.1369864922467532,
+    "d": 0.004133563312764643,
+    "ff": 0.13428196728329128,
+    "roll": -0.03423147714211455,
+    "future": -0.0175501644195032,
+    "prev": 0.0,
+    "safety_fallback": 0.14663300583101788,
+    "adaptive": 0.0,
+    "clutch_d_scale": 0.0,
+    "chaos_action_scale": 0.18,
+    "p_chaos_drop": 0.18,
+    "i_chaos_drop": 0.25,
+    "d_chaos_lift": 0.1,
+    "ff_plan_lift": 0.06,
+    "road_damping": 0.08,
+    "s3_topology": 0.0,
+    "s3_error_push": 0.16,
+    "s3_chaos_track": 0.08,
+    "s3_curvature_damping": 0.2,
+    "topology_bank_max_distance": 0.0,
+    "span_guard_threshold": 10.0,
+    "span_guard_safety": 0.9058447919358062,
+    "inverse_ff": 0.14,
+    "inverse_ff_coeffs": [
+      -0.0238012101162,
+      0.493905203397,
+      0.0574436031309,
+      -1.06867265906,
+      0.00466016134441,
+      -10.3323642981,
+      -0.580118102819,
+      0.0329294491423,
+      -0.00618813605216,
+      0.798270114644,
+      0.0694539525161,
+      -0.0606454317661
+    ],
+    "integral_limit": 8.0,
+    "topology_bank_lock": 1.0
+  },
+  "banks": {
+    "bank_00": {
+      "signature": [
+        33,
+        321,
+        325,
+        1053,
+        -30,
+        0,
+        0,
+        -287
+      ],
+      "coeffs": {}
+    },
+    "bank_01": {
+      "signature": [
+        34,
+        191,
+        259,
+        274,
+        0,
+        1,
+        0,
+        -157
+      ],
+      "coeffs": {}
+    },
+    "bank_02": {
+      "signature": [
+        -1,
+        -259,
+        834,
+        -4,
+        0,
+        0,
+        0,
+        257
+      ],
+      "coeffs": {}
+    },
+    "bank_03": {
+      "signature": [
+        12,
+        234,
+        656,
+        387,
+        0,
+        1,
+        0,
+        -222
+      ],
+      "coeffs": {}
+    },
+    "bank_04": {
+      "signature": [
+        637,
+        160,
+        914,
+        -7,
+        316,
+        4,
+        0,
+        477
+      ],
+      "coeffs": {}
+    },
+    "bank_05": {
+      "signature": [
+        -102,
+        164,
+        809,
+        -34,
+        0,
+        10,
+        1,
+        -266
+      ],
+      "coeffs": {}
+    },
+    "bank_06": {
+      "signature": [
+        615,
+        157,
+        911,
+        -3,
+        0,
+        0,
+        0,
+        458
+      ],
+      "coeffs": {}
+    },
+    "bank_07": {
+      "signature": [
+        97,
+        264,
+        472,
+        -12,
+        0,
+        -8,
+        0,
+        -167
+      ],
+      "coeffs": {}
+    },
+    "bank_08": {
+      "signature": [
+        -626,
+        -529,
+        744,
+        17,
+        0,
+        3,
+        0,
+        -97
+      ],
+      "coeffs": {}
+    },
+    "bank_09": {
+      "signature": [
+        -642,
+        -488,
+        743,
+        23,
+        0,
+        -3,
+        0,
+        -154
+      ],
+      "coeffs": {}
+    },
+    "bank_10": {
+      "signature": [
+        -737,
+        -354,
+        759,
+        19,
+        0,
+        -7,
+        0,
+        -383
+      ],
+      "coeffs": {}
+    },
+    "bank_11": {
+      "signature": [
+        -631,
+        -517,
+        743,
+        1,
+        0,
+        -5,
+        0,
+        -114
+      ],
+      "coeffs": {}
+    },
+    "bank_12": {
+      "signature": [
+        -16,
+        -124,
+        841,
+        -36,
+        0,
+        -3,
+        0,
+        107
+      ],
+      "coeffs": {}
+    },
+    "bank_13": {
+      "signature": [
+        -5,
+        33,
+        334,
+        -182,
+        81,
+        -1,
+        0,
+        -38
+      ],
+      "coeffs": {}
+    },
+    "bank_14": {
+      "signature": [
+        0,
+        173,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -173
+      ],
+      "coeffs": {}
+    },
+    "bank_15": {
+      "signature": [
+        12,
+        165,
+        251,
+        -1969,
+        0,
+        -3,
+        0,
+        -153
+      ],
+      "coeffs": {}
+    }
+  },
+  "topology_banks": {
+    "topo_00003_padic_base": {
+      "signature": [
+        0,
+        679,
+        598,
+        762,
+        919,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00003"
+    },
+    "topo_00004_stock_pid": {
+      "signature": [
+        38,
+        833,
+        528,
+        762,
+        923,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00004"
+    },
+    "topo_00005_padic_base": {
+      "signature": [
+        0,
+        804,
+        659,
+        762,
+        977,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00005"
+    },
+    "topo_00007_stock_pid": {
+      "signature": [
+        13,
+        784,
+        622,
+        762,
+        968,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00007"
+    },
+    "topo_00009_padic_base": {
+      "signature": [
+        0,
+        621,
+        650,
+        762,
+        965,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00009"
+    },
+    "topo_00011_padic_base": {
+      "signature": [
+        51,
+        738,
+        319,
+        762,
+        832,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00011"
+    },
+    "topo_00012_padic_base": {
+      "signature": [
+        0,
+        794,
+        747,
+        762,
+        982,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00012"
+    },
+    "topo_00013_padic_base": {
+      "signature": [
+        0,
+        757,
+        683,
+        762,
+        972,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00013"
+    },
+    "topo_00014_padic_base": {
+      "signature": [
+        25,
+        532,
+        459,
+        762,
+        931,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00014"
+    },
+    "topo_00015_padic_base": {
+      "signature": [
+        38,
+        900,
+        600,
+        762,
+        902,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00015"
+    },
+    "topo_00018_padic_base": {
+      "signature": [
+        0,
+        891,
+        678,
+        762,
+        973,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00018"
+    },
+    "topo_00024_stock_pid": {
+      "signature": [
+        13,
+        808,
+        585,
+        762,
+        967,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00024"
+    },
+    "topo_00028_padic_base": {
+      "signature": [
+        0,
+        830,
+        678,
+        762,
+        976,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00028"
+    },
+    "topo_00032_stock_pid": {
+      "signature": [
+        25,
+        693,
+        669,
+        762,
+        979,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00032"
+    },
+    "topo_00033_padic_base": {
+      "signature": [
+        0,
+        807,
+        708,
+        762,
+        962,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00033"
+    },
+    "topo_00035_padic_base": {
+      "signature": [
+        0,
+        796,
+        580,
+        762,
+        967,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00035"
+    },
+    "topo_00037_stock_pid": {
+      "signature": [
+        63,
+        865,
+        280,
+        762,
+        640,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00037"
+    },
+    "topo_00038_padic_base": {
+      "signature": [
+        38,
+        724,
+        610,
+        762,
+        920,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00038"
+    },
+    "topo_00042_padic_base": {
+      "signature": [
+        0,
+        575,
+        661,
+        762,
+        970,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00042"
+    },
+    "topo_00046_stock_pid": {
+      "signature": [
+        0,
+        792,
+        723,
+        762,
+        976,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00046"
+    },
+    "topo_00047_padic_base": {
+      "signature": [
+        51,
+        669,
+        276,
+        762,
+        668,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00047"
+    },
+    "topo_00048_padic_base": {
+      "signature": [
+        63,
+        919,
+        566,
+        762,
+        948,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00048"
+    },
+    "topo_00051_padic_base": {
+      "signature": [
+        13,
+        838,
+        655,
+        762,
+        972,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00051"
+    },
+    "topo_00053_padic_base": {
+      "signature": [
+        13,
+        642,
+        650,
+        762,
+        949,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00053"
+    },
+    "topo_00054_stock_pid": {
+      "signature": [
+        25,
+        872,
+        560,
+        762,
+        948,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00054"
+    },
+    "topo_00055_padic_base": {
+      "signature": [
+        0,
+        774,
+        735,
+        762,
+        973,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00055"
+    },
+    "topo_00056_stock_pid": {
+      "signature": [
+        25,
+        651,
+        559,
+        762,
+        922,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00056"
+    },
+    "topo_00061_padic_base": {
+      "signature": [
+        13,
+        787,
+        700,
+        762,
+        963,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00061"
+    },
+    "topo_00062_padic_base": {
+      "signature": [
+        38,
+        785,
+        656,
+        762,
+        976,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00062"
+    },
+    "topo_00063_padic_base": {
+      "signature": [
+        0,
+        918,
+        670,
+        762,
+        968,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00063"
+    },
+    "topo_00064_stock_pid": {
+      "signature": [
+        76,
+        960,
+        462,
+        762,
+        861,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00064"
+    },
+    "topo_00065_padic_base": {
+      "signature": [
+        25,
+        792,
+        569,
+        762,
+        928,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00065"
+    },
+    "topo_00066_padic_base": {
+      "signature": [
+        76,
+        822,
+        512,
+        762,
+        927,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00066"
+    },
+    "topo_00069_padic_base": {
+      "signature": [
+        0,
+        629,
+        737,
+        762,
+        981,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00069"
+    },
+    "topo_00070_stock_pid": {
+      "signature": [
+        13,
+        609,
+        705,
+        762,
+        977,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00070"
+    },
+    "topo_00072_padic_base": {
+      "signature": [
+        0,
+        674,
+        706,
+        762,
+        977,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00072"
+    },
+    "topo_00074_padic_base": {
+      "signature": [
+        63,
+        864,
+        614,
+        762,
+        937,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00074"
+    },
+    "topo_00075_stock_pid": {
+      "signature": [
+        0,
+        780,
+        725,
+        762,
+        983,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00075"
+    },
+    "topo_00076_padic_base": {
+      "signature": [
+        0,
+        698,
+        653,
+        762,
+        976,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00076"
+    },
+    "topo_00077_padic_base": {
+      "signature": [
+        38,
+        537,
+        579,
+        762,
+        934,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00077"
+    },
+    "topo_00079_stock_pid": {
+      "signature": [
+        25,
+        831,
+        565,
+        762,
+        954,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00079"
+    },
+    "topo_00082_padic_base": {
+      "signature": [
+        0,
+        678,
+        641,
+        762,
+        972,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00082"
+    },
+    "topo_00083_padic_base": {
+      "signature": [
+        0,
+        804,
+        626,
+        762,
+        964,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00083"
+    },
+    "topo_00084_padic_base": {
+      "signature": [
+        0,
+        849,
+        614,
+        762,
+        961,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00084"
+    },
+    "topo_00088_padic_base": {
+      "signature": [
+        0,
+        765,
+        686,
+        762,
+        954,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00088"
+    },
+    "topo_00089_padic_base": {
+      "signature": [
+        25,
+        728,
+        661,
+        762,
+        955,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00089"
+    },
+    "topo_00092_padic_base": {
+      "signature": [
+        38,
+        732,
+        568,
+        762,
+        942,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00092"
+    },
+    "topo_00093_padic_base": {
+      "signature": [
+        0,
+        548,
+        694,
+        762,
+        975,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00093"
+    },
+    "topo_00095_padic_base": {
+      "signature": [
+        13,
+        761,
+        663,
+        762,
+        976,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00095"
+    },
+    "topo_00096_padic_base": {
+      "signature": [
+        38,
+        864,
+        574,
+        762,
+        949,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.1297274659070753
+      },
+      "mode": "padic_base",
+      "source_segment": "00096"
+    },
+    "topo_00098_stock_pid": {
+      "signature": [
+        38,
+        847,
+        655,
+        762,
+        936,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "mode": "stock_pid",
+      "source_segment": "00098"
+    },
+    "tail_00522": {
+      "signature": [
+        13,
+        641,
+        700,
+        762,
+        983,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00522",
+      "mode": "tail_sweep"
+    },
+    "tail_00633": {
+      "signature": [
+        25,
+        910,
+        535,
+        762,
+        950,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00633",
+      "mode": "tail_sweep"
+    },
+    "tail_00526": {
+      "signature": [
+        51,
+        687,
+        367,
+        762,
+        900,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00526",
+      "mode": "tail_sweep"
+    },
+    "tail_00432": {
+      "signature": [
+        0,
+        862,
+        731,
+        762,
+        964,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00432",
+      "mode": "tail_sweep"
+    },
+    "tail_00489": {
+      "signature": [
+        13,
+        670,
+        530,
+        762,
+        954,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00489",
+      "mode": "tail_sweep"
+    },
+    "tail_00688": {
+      "signature": [
+        0,
+        620,
+        596,
+        762,
+        975,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00688",
+      "mode": "tail_sweep"
+    },
+    "tail_00254": {
+      "signature": [
+        25,
+        908,
+        418,
+        762,
+        832,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00254",
+      "mode": "tail_sweep"
+    },
+    "tail_00420": {
+      "signature": [
+        0,
+        872,
+        695,
+        762,
+        954,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00420",
+      "mode": "tail_sweep"
+    },
+    "tail_00848": {
+      "signature": [
+        13,
+        831,
+        538,
+        762,
+        922,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00848",
+      "mode": "tail_sweep"
+    },
+    "tail_00582": {
+      "signature": [
+        0,
+        515,
+        569,
+        762,
+        944,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00582",
+      "mode": "tail_sweep"
+    },
+    "tail_00120": {
+      "signature": [
+        0,
+        630,
+        599,
+        762,
+        947,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00120",
+      "mode": "tail_sweep"
+    },
+    "tail_00705": {
+      "signature": [
+        0,
+        779,
+        691,
+        762,
+        975,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00705",
+      "mode": "tail_sweep"
+    },
+    "tail_00660": {
+      "signature": [
+        25,
+        700,
+        646,
+        762,
+        964,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00660",
+      "mode": "tail_sweep"
+    },
+    "tail_00264": {
+      "signature": [
+        38,
+        731,
+        198,
+        762,
+        817,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00264",
+      "mode": "tail_sweep"
+    },
+    "tail_00480": {
+      "signature": [
+        38,
+        680,
+        369,
+        762,
+        943,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00480",
+      "mode": "tail_sweep"
+    },
+    "tail_00797": {
+      "signature": [
+        101,
+        797,
+        595,
+        762,
+        918,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00797",
+      "mode": "tail_sweep"
+    },
+    "tail_00240": {
+      "signature": [
+        0,
+        796,
+        607,
+        762,
+        930,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00240",
+      "mode": "tail_sweep"
+    },
+    "tail_00203": {
+      "signature": [
+        0,
+        514,
+        604,
+        762,
+        960,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00203",
+      "mode": "tail_sweep"
+    },
+    "tail_00517": {
+      "signature": [
+        76,
+        503,
+        536,
+        762,
+        950,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00517",
+      "mode": "tail_sweep"
+    },
+    "tail_00765": {
+      "signature": [
+        63,
+        535,
+        159,
+        762,
+        846,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00765",
+      "mode": "tail_sweep"
+    },
+    "tail_00124": {
+      "signature": [
+        13,
+        761,
+        565,
+        762,
+        951,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00124",
+      "mode": "tail_sweep"
+    },
+    "tail_00476": {
+      "signature": [
+        13,
+        567,
+        611,
+        762,
+        959,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00476",
+      "mode": "tail_sweep"
+    },
+    "tail_00699": {
+      "signature": [
+        0,
+        645,
+        603,
+        762,
+        942,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00699",
+      "mode": "tail_sweep"
+    },
+    "tail_00437": {
+      "signature": [
+        13,
+        589,
+        727,
+        762,
+        980,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00437",
+      "mode": "tail_sweep"
+    },
+    "tail_00193": {
+      "signature": [
+        25,
+        903,
+        505,
+        762,
+        946,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00193",
+      "mode": "tail_sweep"
+    },
+    "tail_00679": {
+      "signature": [
+        25,
+        806,
+        492,
+        762,
+        926,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00679",
+      "mode": "tail_sweep"
+    },
+    "tail_00695": {
+      "signature": [
+        0,
+        754,
+        597,
+        762,
+        951,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00695",
+      "mode": "tail_sweep"
+    },
+    "tail_00722": {
+      "signature": [
+        13,
+        877,
+        648,
+        762,
+        952,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00722",
+      "mode": "tail_sweep"
+    },
+    "tail_00799": {
+      "signature": [
+        51,
+        499,
+        602,
+        762,
+        943,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00799",
+      "mode": "tail_sweep"
+    },
+    "tail_00226": {
+      "signature": [
+        13,
+        579,
+        549,
+        762,
+        950,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00226",
+      "mode": "tail_sweep"
+    },
+    "tail_00387": {
+      "signature": [
+        51,
+        503,
+        579,
+        762,
+        931,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00387",
+      "mode": "tail_sweep"
+    },
+    "tail_00626": {
+      "signature": [
+        25,
+        384,
+        432,
+        762,
+        912,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00626",
+      "mode": "tail_sweep"
+    },
+    "tail_00069": {
+      "signature": [
+        0,
+        629,
+        737,
+        762,
+        981,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00069",
+      "mode": "tail_sweep"
+    },
+    "tail_00503": {
+      "signature": [
+        13,
+        888,
+        641,
+        762,
+        964,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00503",
+      "mode": "tail_sweep"
+    },
+    "tail_00849": {
+      "signature": [
+        25,
+        932,
+        677,
+        762,
+        964,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00849",
+      "mode": "tail_sweep"
+    },
+    "tail_00752": {
+      "signature": [
+        25,
+        577,
+        560,
+        762,
+        936,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00752",
+      "mode": "tail_sweep"
+    },
+    "tail_00322": {
+      "signature": [
+        13,
+        807,
+        651,
+        762,
+        962,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00322",
+      "mode": "tail_sweep"
+    },
+    "tail_00521": {
+      "signature": [
+        0,
+        515,
+        662,
+        762,
+        947,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00521",
+      "mode": "tail_sweep"
+    },
+    "tail_00148": {
+      "signature": [
+        38,
+        290,
+        344,
+        0,
+        0,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00148",
+      "mode": "tail_sweep"
+    },
+    "tail_00500": {
+      "signature": [
+        0,
+        851,
+        610,
+        762,
+        981,
+        762,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00500",
+      "mode": "tail_sweep"
+    },
+    "real_tail_04743_low_i": {
+      "signature": [
+        0,
+        826,
+        653,
+        762,
+        975,
+        762,
+        0,
+        0,
+        2,
+        85,
+        2,
+        85,
+        -178,
+        44,
+        11,
+        27
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "04743",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_04959_low_i": {
+      "signature": [
+        25,
+        627,
+        594,
+        762,
+        942,
+        762,
+        0,
+        0,
+        -526,
+        165,
+        -534,
+        170,
+        269,
+        102,
+        -303,
+        224
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "04959",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_04744_pid_heavy": {
+      "signature": [
+        0,
+        986,
+        744,
+        762,
+        984,
+        762,
+        0,
+        0,
+        -505,
+        1313,
+        -534,
+        1267,
+        -5,
+        297,
+        1048,
+        2000
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04744",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03712_stock": {
+      "signature": [
+        38,
+        675,
+        559,
+        762,
+        935,
+        762,
+        0,
+        0,
+        -64,
+        82,
+        -67,
+        84,
+        -302,
+        21,
+        -11,
+        33
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03712",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_01947_smooth_ff": {
+      "signature": [
+        0,
+        720,
+        662,
+        762,
+        954,
+        762,
+        0,
+        0,
+        51,
+        86,
+        50,
+        85,
+        41,
+        19,
+        39,
+        19
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01947",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02531_smooth_ff": {
+      "signature": [
+        0,
+        566,
+        651,
+        762,
+        956,
+        762,
+        0,
+        0,
+        348,
+        690,
+        317,
+        657,
+        288,
+        92,
+        1121,
+        898
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02531",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04188_smooth_ff": {
+      "signature": [
+        25,
+        613,
+        610,
+        762,
+        970,
+        762,
+        0,
+        0,
+        488,
+        157,
+        491,
+        154,
+        130,
+        94,
+        408,
+        71
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04188",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03811_stock": {
+      "signature": [
+        25,
+        849,
+        660,
+        762,
+        956,
+        762,
+        0,
+        0,
+        1118,
+        288,
+        1120,
+        290,
+        454,
+        74,
+        887,
+        289
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03811",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04803_smooth_ff": {
+      "signature": [
+        51,
+        856,
+        499,
+        762,
+        853,
+        762,
+        0,
+        0,
+        2000,
+        215,
+        2000,
+        216,
+        412,
+        63,
+        2000,
+        127
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04803",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01387_smooth_ff": {
+      "signature": [
+        13,
+        507,
+        719,
+        762,
+        955,
+        762,
+        0,
+        0,
+        382,
+        1017,
+        350,
+        1005,
+        -78,
+        110,
+        934,
+        550
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01387",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01975_low_i": {
+      "signature": [
+        51,
+        853,
+        608,
+        762,
+        896,
+        762,
+        0,
+        0,
+        -4,
+        273,
+        -2,
+        270,
+        -175,
+        23,
+        15,
+        81
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "01975",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_01269_pid_heavy": {
+      "signature": [
+        63,
+        706,
+        485,
+        762,
+        872,
+        762,
+        0,
+        0,
+        -7,
+        6,
+        -7,
+        5,
+        158,
+        38,
+        3,
+        10
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01269",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02894_pid_heavy": {
+      "signature": [
+        0,
+        720,
+        734,
+        762,
+        980,
+        762,
+        0,
+        0,
+        -5,
+        42,
+        -5,
+        42,
+        -95,
+        53,
+        52,
+        65
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "02894",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03817_low_i": {
+      "signature": [
+        0,
+        577,
+        597,
+        762,
+        968,
+        762,
+        0,
+        0,
+        2000,
+        521,
+        2000,
+        521,
+        551,
+        60,
+        2000,
+        357
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "03817",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_02931_pid_heavy": {
+      "signature": [
+        0,
+        797,
+        662,
+        762,
+        951,
+        762,
+        0,
+        0,
+        -808,
+        931,
+        -813,
+        927,
+        -645,
+        742,
+        -551,
+        566
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "02931",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03134_ff_heavy": {
+      "signature": [
+        139,
+        889,
+        332,
+        0,
+        0,
+        762,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28,
+        0,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03134",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03659_stock": {
+      "signature": [
+        0,
+        729,
+        694,
+        762,
+        958,
+        762,
+        0,
+        0,
+        1059,
+        203,
+        1064,
+        204,
+        81,
+        78,
+        815,
+        337
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03659",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_01545_pid_heavy": {
+      "signature": [
+        0,
+        828,
+        690,
+        762,
+        968,
+        762,
+        0,
+        0,
+        2000,
+        132,
+        2000,
+        128,
+        241,
+        12,
+        2000,
+        188
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01545",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_01496_low_i": {
+      "signature": [
+        0,
+        827,
+        550,
+        762,
+        967,
+        762,
+        0,
+        0,
+        -1124,
+        1039,
+        -1125,
+        1039,
+        62,
+        24,
+        -849,
+        714
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "01496",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_01083_smooth_ff": {
+      "signature": [
+        51,
+        478,
+        371,
+        762,
+        785,
+        762,
+        0,
+        0,
+        105,
+        219,
+        95,
+        206,
+        135,
+        23,
+        -243,
+        575
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01083",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04758_smooth_ff": {
+      "signature": [
+        0,
+        511,
+        638,
+        762,
+        936,
+        762,
+        0,
+        0,
+        -432,
+        619,
+        -408,
+        598,
+        66,
+        67,
+        -1059,
+        697
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04758",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00688_ff_heavy": {
+      "signature": [
+        0,
+        620,
+        596,
+        762,
+        975,
+        762,
+        0,
+        0,
+        566,
+        997,
+        526,
+        995,
+        -31,
+        192,
+        768,
+        617
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00688",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03517_pid_heavy": {
+      "signature": [
+        0,
+        559,
+        615,
+        762,
+        966,
+        762,
+        0,
+        0,
+        -603,
+        608,
+        -582,
+        619,
+        327,
+        69,
+        -924,
+        222
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03517",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03848_ff_heavy": {
+      "signature": [
+        51,
+        504,
+        430,
+        762,
+        914,
+        762,
+        0,
+        0,
+        218,
+        236,
+        226,
+        239,
+        397,
+        204,
+        76,
+        89
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03848",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02108_smooth_ff": {
+      "signature": [
+        0,
+        666,
+        727,
+        762,
+        974,
+        762,
+        0,
+        0,
+        504,
+        328,
+        496,
+        332,
+        365,
+        117,
+        552,
+        138
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02108",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01973_ff_heavy": {
+      "signature": [
+        63,
+        769,
+        505,
+        762,
+        916,
+        762,
+        0,
+        0,
+        84,
+        244,
+        73,
+        258,
+        37,
+        33,
+        114,
+        45
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01973",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01458_low_i": {
+      "signature": [
+        25,
+        783,
+        709,
+        762,
+        965,
+        762,
+        0,
+        0,
+        -13,
+        106,
+        -12,
+        106,
+        69,
+        39,
+        6,
+        14
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "01458",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_00848_ff_heavy": {
+      "signature": [
+        13,
+        831,
+        538,
+        762,
+        922,
+        762,
+        0,
+        0,
+        -20,
+        87,
+        -16,
+        85,
+        19,
+        27,
+        -54,
+        56
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00848",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01412_stock": {
+      "signature": [
+        25,
+        455,
+        598,
+        762,
+        965,
+        762,
+        0,
+        0,
+        138,
+        216,
+        150,
+        232,
+        82,
+        62,
+        35,
+        64
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "01412",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04620_smooth_ff": {
+      "signature": [
+        0,
+        580,
+        646,
+        762,
+        951,
+        762,
+        0,
+        0,
+        -53,
+        191,
+        -60,
+        201,
+        377,
+        54,
+        19,
+        31
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04620",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01224_smooth_ff": {
+      "signature": [
+        25,
+        740,
+        579,
+        762,
+        961,
+        762,
+        0,
+        0,
+        21,
+        84,
+        19,
+        84,
+        35,
+        15,
+        40,
+        26
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01224",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00480_current_no_adapt": {
+      "signature": [
+        38,
+        680,
+        369,
+        762,
+        943,
+        762,
+        0,
+        0,
+        -4,
+        3,
+        -4,
+        3,
+        148,
+        27,
+        -11,
+        12
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.14663300583101788,
+        "prev": 0.0
+      },
+      "source_segment": "00480",
+      "mode": "real_rollout_current_no_adapt"
+    },
+    "real_tail_01419_stock": {
+      "signature": [
+        0,
+        885,
+        683,
+        762,
+        936,
+        762,
+        0,
+        0,
+        -669,
+        68,
+        -667,
+        69,
+        -363,
+        62,
+        -647,
+        21
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "01419",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02247_pid_heavy": {
+      "signature": [
+        0,
+        534,
+        604,
+        762,
+        938,
+        762,
+        0,
+        0,
+        1189,
+        1050,
+        1158,
+        1046,
+        274,
+        101,
+        1935,
+        686
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "02247",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02406_ff_heavy": {
+      "signature": [
+        89,
+        602,
+        545,
+        762,
+        891,
+        762,
+        0,
+        0,
+        -4,
+        4,
+        -4,
+        4,
+        326,
+        22,
+        -6,
+        11
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02406",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03761_pid_heavy": {
+      "signature": [
+        76,
+        720,
+        642,
+        762,
+        939,
+        762,
+        0,
+        0,
+        1063,
+        166,
+        1072,
+        150,
+        407,
+        115,
+        728,
+        390
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03761",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_00264_current_no_adapt": {
+      "signature": [
+        38,
+        731,
+        198,
+        762,
+        817,
+        762,
+        0,
+        0,
+        -1,
+        8,
+        0,
+        4,
+        66,
+        17,
+        -122,
+        191
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.14663300583101788,
+        "prev": 0.0
+      },
+      "source_segment": "00264",
+      "mode": "real_rollout_current_no_adapt"
+    },
+    "real_tail_01604_ff_heavy": {
+      "signature": [
+        38,
+        830,
+        280,
+        762,
+        855,
+        762,
+        0,
+        0,
+        -2,
+        20,
+        -2,
+        21,
+        144,
+        23,
+        232,
+        396
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01604",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03181_smooth_ff": {
+      "signature": [
+        0,
+        631,
+        574,
+        762,
+        947,
+        762,
+        0,
+        0,
+        -1169,
+        1497,
+        -1119,
+        1467,
+        62,
+        33,
+        -1818,
+        907
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03181",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01312_smooth_ff": {
+      "signature": [
+        0,
+        531,
+        647,
+        762,
+        954,
+        762,
+        0,
+        0,
+        -797,
+        821,
+        -770,
+        808,
+        -237,
+        338,
+        -1500,
+        755
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01312",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04772_smooth_ff": {
+      "signature": [
+        76,
+        506,
+        509,
+        762,
+        873,
+        762,
+        0,
+        0,
+        2,
+        3,
+        2,
+        3,
+        296,
+        42,
+        3,
+        2
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04772",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01400_smooth_ff": {
+      "signature": [
+        38,
+        806,
+        549,
+        762,
+        925,
+        762,
+        0,
+        0,
+        22,
+        61,
+        22,
+        61,
+        180,
+        75,
+        10,
+        8
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01400",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01809_pid_heavy": {
+      "signature": [
+        25,
+        536,
+        675,
+        762,
+        963,
+        762,
+        0,
+        0,
+        1459,
+        531,
+        1435,
+        553,
+        275,
+        282,
+        1711,
+        122
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01809",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_01202_stock": {
+      "signature": [
+        25,
+        682,
+        662,
+        762,
+        983,
+        762,
+        0,
+        0,
+        -404,
+        114,
+        -408,
+        106,
+        -101,
+        19,
+        -158,
+        303
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "01202",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_01716_smooth_ff": {
+      "signature": [
+        51,
+        621,
+        671,
+        762,
+        942,
+        762,
+        0,
+        0,
+        -48,
+        207,
+        -51,
+        207,
+        209,
+        48,
+        40,
+        143
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01716",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01076_smooth_ff": {
+      "signature": [
+        0,
+        833,
+        587,
+        762,
+        961,
+        762,
+        0,
+        0,
+        2,
+        86,
+        3,
+        86,
+        447,
+        30,
+        -3,
+        35
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01076",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03193_smooth_ff": {
+      "signature": [
+        38,
+        651,
+        688,
+        762,
+        974,
+        762,
+        0,
+        0,
+        -559,
+        147,
+        -565,
+        150,
+        -105,
+        132,
+        -488,
+        80
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03193",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02502_ff_heavy": {
+      "signature": [
+        0,
+        785,
+        625,
+        762,
+        962,
+        762,
+        0,
+        0,
+        209,
+        138,
+        211,
+        135,
+        303,
+        81,
+        -48,
+        367
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02502",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04394_smooth_ff": {
+      "signature": [
+        13,
+        567,
+        631,
+        762,
+        953,
+        762,
+        0,
+        0,
+        -652,
+        221,
+        -661,
+        214,
+        -395,
+        70,
+        -402,
+        295
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04394",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03930_ff_heavy": {
+      "signature": [
+        0,
+        929,
+        721,
+        762,
+        972,
+        762,
+        0,
+        0,
+        2000,
+        273,
+        2000,
+        273,
+        389,
+        28,
+        2000,
+        766
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03930",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02224_smooth_ff": {
+      "signature": [
+        0,
+        611,
+        602,
+        762,
+        976,
+        762,
+        0,
+        0,
+        1091,
+        1037,
+        1059,
+        1034,
+        420,
+        110,
+        1733,
+        668
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02224",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01522_low_i": {
+      "signature": [
+        51,
+        758,
+        627,
+        762,
+        955,
+        762,
+        0,
+        0,
+        396,
+        281,
+        387,
+        298,
+        253,
+        69,
+        324,
+        171
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "01522",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_04731_stock": {
+      "signature": [
+        25,
+        670,
+        682,
+        762,
+        974,
+        762,
+        0,
+        0,
+        5,
+        69,
+        5,
+        69,
+        -1,
+        20,
+        -22,
+        14
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "04731",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04877_stock": {
+      "signature": [
+        0,
+        767,
+        731,
+        762,
+        978,
+        762,
+        0,
+        0,
+        431,
+        345,
+        449,
+        371,
+        130,
+        102,
+        293,
+        143
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "04877",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02955_low_i": {
+      "signature": [
+        13,
+        652,
+        605,
+        762,
+        952,
+        762,
+        0,
+        0,
+        533,
+        813,
+        554,
+        812,
+        -206,
+        86,
+        -71,
+        499
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "02955",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_01703_smooth_ff": {
+      "signature": [
+        0,
+        549,
+        574,
+        762,
+        923,
+        762,
+        0,
+        0,
+        -538,
+        1272,
+        -602,
+        1305,
+        -106,
+        332,
+        640,
+        897
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01703",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04630_ff_heavy": {
+      "signature": [
+        51,
+        577,
+        422,
+        762,
+        910,
+        762,
+        0,
+        0,
+        -75,
+        117,
+        -80,
+        116,
+        -23,
+        155,
+        0,
+        49
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04630",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01954_stock": {
+      "signature": [
+        89,
+        873,
+        561,
+        762,
+        907,
+        762,
+        0,
+        0,
+        -19,
+        143,
+        -19,
+        143,
+        181,
+        11,
+        -4,
+        20
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "01954",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02890_stock": {
+      "signature": [
+        0,
+        689,
+        657,
+        762,
+        963,
+        762,
+        0,
+        0,
+        -2,
+        99,
+        -5,
+        102,
+        283,
+        97,
+        23,
+        18
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02890",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04013_ff_heavy": {
+      "signature": [
+        76,
+        685,
+        530,
+        762,
+        944,
+        762,
+        0,
+        0,
+        14,
+        192,
+        21,
+        180,
+        153,
+        36,
+        26,
+        152
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04013",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04302_low_i": {
+      "signature": [
+        0,
+        718,
+        688,
+        762,
+        969,
+        762,
+        0,
+        0,
+        502,
+        156,
+        507,
+        149,
+        564,
+        27,
+        344,
+        158
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "04302",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_03079_stock": {
+      "signature": [
+        76,
+        699,
+        445,
+        762,
+        911,
+        762,
+        0,
+        0,
+        475,
+        470,
+        471,
+        477,
+        29,
+        92,
+        203,
+        258
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03079",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02615_stock": {
+      "signature": [
+        13,
+        851,
+        639,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -3,
+        63,
+        -3,
+        63,
+        557,
+        46,
+        0,
+        10
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02615",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04900_ff_heavy": {
+      "signature": [
+        0,
+        818,
+        692,
+        762,
+        966,
+        762,
+        0,
+        0,
+        246,
+        897,
+        224,
+        878,
+        -38,
+        344,
+        179,
+        381
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04900",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01506_smooth_ff": {
+      "signature": [
+        0,
+        760,
+        721,
+        762,
+        973,
+        762,
+        0,
+        0,
+        783,
+        923,
+        796,
+        905,
+        137,
+        107,
+        8,
+        1008
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01506",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03111_stock": {
+      "signature": [
+        13,
+        988,
+        674,
+        762,
+        979,
+        762,
+        0,
+        0,
+        -13,
+        31,
+        -12,
+        31,
+        -301,
+        23,
+        -4,
+        34
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03111",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_03966_ff_heavy": {
+      "signature": [
+        25,
+        739,
+        403,
+        762,
+        927,
+        762,
+        0,
+        0,
+        -52,
+        115,
+        -49,
+        111,
+        55,
+        74,
+        -93,
+        81
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03966",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04949_pid_heavy": {
+      "signature": [
+        114,
+        616,
+        523,
+        762,
+        943,
+        762,
+        0,
+        0,
+        -18,
+        105,
+        -19,
+        105,
+        174,
+        49,
+        23,
+        100
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04949",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02912_stock": {
+      "signature": [
+        38,
+        872,
+        497,
+        762,
+        906,
+        762,
+        0,
+        0,
+        -2,
+        55,
+        -2,
+        56,
+        77,
+        20,
+        -6,
+        5
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02912",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02888_stock": {
+      "signature": [
+        63,
+        778,
+        721,
+        762,
+        969,
+        762,
+        0,
+        0,
+        11,
+        62,
+        12,
+        62,
+        127,
+        21,
+        -5,
+        13
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02888",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_00799_current_no_adapt": {
+      "signature": [
+        51,
+        499,
+        602,
+        762,
+        943,
+        762,
+        0,
+        0,
+        -227,
+        352,
+        -239,
+        340,
+        3,
+        42,
+        228,
+        466
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.14663300583101788,
+        "prev": 0.0
+      },
+      "source_segment": "00799",
+      "mode": "real_rollout_current_no_adapt"
+    },
+    "real_tail_03001_ff_heavy": {
+      "signature": [
+        13,
+        738,
+        670,
+        762,
+        954,
+        762,
+        0,
+        0,
+        -1287,
+        1109,
+        -1260,
+        1119,
+        -179,
+        72,
+        -1286,
+        603
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03001",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01521_pid_heavy": {
+      "signature": [
+        25,
+        648,
+        488,
+        762,
+        931,
+        762,
+        0,
+        0,
+        -646,
+        553,
+        -631,
+        556,
+        340,
+        64,
+        -980,
+        273
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01521",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02402_smooth_ff": {
+      "signature": [
+        0,
+        828,
+        614,
+        762,
+        973,
+        762,
+        0,
+        0,
+        1510,
+        843,
+        1512,
+        839,
+        451,
+        196,
+        818,
+        1246
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02402",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02552_ff_heavy": {
+      "signature": [
+        0,
+        704,
+        723,
+        762,
+        973,
+        762,
+        0,
+        0,
+        -143,
+        910,
+        -162,
+        897,
+        254,
+        51,
+        406,
+        639
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02552",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01037_smooth_ff": {
+      "signature": [
+        89,
+        549,
+        483,
+        762,
+        839,
+        762,
+        0,
+        0,
+        -57,
+        158,
+        -48,
+        139,
+        -7,
+        16,
+        -738,
+        829
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01037",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04853_low_i": {
+      "signature": [
+        25,
+        543,
+        631,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -82,
+        160,
+        -75,
+        148,
+        33,
+        200,
+        -543,
+        546
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "04853",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_01434_smooth_ff": {
+      "signature": [
+        25,
+        535,
+        616,
+        762,
+        967,
+        762,
+        0,
+        0,
+        741,
+        466,
+        724,
+        470,
+        227,
+        158,
+        964,
+        182
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01434",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01239_pid_heavy": {
+      "signature": [
+        0,
+        805,
+        698,
+        762,
+        977,
+        762,
+        0,
+        0,
+        3,
+        41,
+        4,
+        42,
+        127,
+        45,
+        -5,
+        52
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01239",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03458_ff_heavy": {
+      "signature": [
+        13,
+        768,
+        678,
+        762,
+        966,
+        762,
+        0,
+        0,
+        6,
+        44,
+        7,
+        44,
+        -17,
+        65,
+        2,
+        14
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03458",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03008_smooth_ff": {
+      "signature": [
+        25,
+        662,
+        563,
+        762,
+        923,
+        762,
+        0,
+        0,
+        -446,
+        324,
+        -453,
+        320,
+        93,
+        185,
+        -205,
+        257
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03008",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01415_ff_heavy": {
+      "signature": [
+        13,
+        677,
+        548,
+        762,
+        937,
+        762,
+        0,
+        0,
+        -19,
+        121,
+        -20,
+        121,
+        554,
+        31,
+        172,
+        320
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01415",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04839_ff_heavy": {
+      "signature": [
+        38,
+        592,
+        510,
+        762,
+        927,
+        762,
+        0,
+        0,
+        43,
+        163,
+        55,
+        146,
+        203,
+        39,
+        -322,
+        378
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04839",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00437_stock": {
+      "signature": [
+        13,
+        589,
+        727,
+        762,
+        980,
+        762,
+        0,
+        0,
+        -7,
+        55,
+        -4,
+        55,
+        -125,
+        34,
+        -170,
+        212
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "00437",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_01245_pid_heavy": {
+      "signature": [
+        0,
+        717,
+        656,
+        762,
+        970,
+        762,
+        0,
+        0,
+        407,
+        541,
+        391,
+        518,
+        35,
+        136,
+        837,
+        573
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01245",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03214_ff_heavy": {
+      "signature": [
+        63,
+        817,
+        595,
+        762,
+        929,
+        762,
+        0,
+        0,
+        -11,
+        25,
+        -11,
+        25,
+        152,
+        105,
+        -8,
+        17
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03214",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04828_ff_heavy": {
+      "signature": [
+        0,
+        856,
+        616,
+        762,
+        949,
+        762,
+        0,
+        0,
+        27,
+        31,
+        27,
+        31,
+        310,
+        67,
+        19,
+        18
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04828",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00322_current_no_adapt": {
+      "signature": [
+        13,
+        807,
+        651,
+        762,
+        962,
+        762,
+        0,
+        0,
+        -167,
+        141,
+        -168,
+        141,
+        -282,
+        52,
+        -135,
+        82
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.14663300583101788,
+        "prev": 0.0
+      },
+      "source_segment": "00322",
+      "mode": "real_rollout_current_no_adapt"
+    },
+    "real_tail_03801_smooth_ff": {
+      "signature": [
+        0,
+        797,
+        712,
+        762,
+        972,
+        762,
+        0,
+        0,
+        -994,
+        474,
+        -1011,
+        461,
+        -526,
+        87,
+        -749,
+        334
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03801",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00752_ff_heavy": {
+      "signature": [
+        25,
+        577,
+        560,
+        762,
+        936,
+        762,
+        0,
+        0,
+        254,
+        439,
+        275,
+        450,
+        68,
+        232,
+        -337,
+        501
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00752",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02587_smooth_ff": {
+      "signature": [
+        25,
+        595,
+        557,
+        762,
+        953,
+        762,
+        0,
+        0,
+        1595,
+        65,
+        1597,
+        61,
+        725,
+        54,
+        1373,
+        261
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02587",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03373_smooth_ff": {
+      "signature": [
+        25,
+        578,
+        582,
+        762,
+        913,
+        762,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        407,
+        5,
+        0,
+        1
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03373",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02078_stock": {
+      "signature": [
+        25,
+        806,
+        607,
+        762,
+        947,
+        762,
+        0,
+        0,
+        -677,
+        185,
+        -673,
+        181,
+        -236,
+        26,
+        -734,
+        94
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02078",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_01436_ff_heavy": {
+      "signature": [
+        25,
+        869,
+        578,
+        762,
+        931,
+        762,
+        0,
+        0,
+        -141,
+        293,
+        -146,
+        287,
+        187,
+        74,
+        -166,
+        193
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01436",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04582_pid_heavy": {
+      "signature": [
+        0,
+        581,
+        680,
+        762,
+        964,
+        762,
+        0,
+        0,
+        9,
+        1405,
+        56,
+        1410,
+        226,
+        155,
+        -643,
+        622
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04582",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04507_smooth_ff": {
+      "signature": [
+        0,
+        970,
+        680,
+        762,
+        974,
+        762,
+        0,
+        0,
+        -34,
+        97,
+        -34,
+        98,
+        24,
+        120,
+        -6,
+        18
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04507",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04499_ff_heavy": {
+      "signature": [
+        25,
+        526,
+        471,
+        762,
+        925,
+        762,
+        0,
+        0,
+        -259,
+        258,
+        -248,
+        248,
+        43,
+        389,
+        -531,
+        311
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04499",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00193_stock": {
+      "signature": [
+        25,
+        903,
+        505,
+        762,
+        946,
+        762,
+        0,
+        0,
+        747,
+        194,
+        746,
+        194,
+        561,
+        19,
+        680,
+        128
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "00193",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04562_ff_heavy": {
+      "signature": [
+        25,
+        515,
+        614,
+        762,
+        928,
+        762,
+        0,
+        0,
+        -553,
+        591,
+        -530,
+        577,
+        190,
+        45,
+        -930,
+        378
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04562",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01267_smooth_ff": {
+      "signature": [
+        114,
+        689,
+        401,
+        762,
+        819,
+        762,
+        0,
+        0,
+        -47,
+        226,
+        -34,
+        196,
+        127,
+        91,
+        -811,
+        913
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01267",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00503_ff_heavy": {
+      "signature": [
+        13,
+        888,
+        641,
+        762,
+        964,
+        762,
+        0,
+        0,
+        8,
+        62,
+        9,
+        61,
+        231,
+        116,
+        -348,
+        458
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00503",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04113_stock": {
+      "signature": [
+        13,
+        751,
+        701,
+        762,
+        971,
+        762,
+        0,
+        0,
+        -4,
+        78,
+        -3,
+        78,
+        -140,
+        50,
+        65,
+        93
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "04113",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_00069_pid_heavy": {
+      "signature": [
+        0,
+        629,
+        737,
+        762,
+        981,
+        762,
+        0,
+        0,
+        168,
+        186,
+        166,
+        186,
+        415,
+        473,
+        343,
+        275
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "00069",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04505_pid_heavy": {
+      "signature": [
+        63,
+        850,
+        497,
+        762,
+        941,
+        762,
+        0,
+        0,
+        12,
+        50,
+        12,
+        50,
+        256,
+        19,
+        -33,
+        62
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04505",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_01113_stock": {
+      "signature": [
+        13,
+        802,
+        603,
+        762,
+        955,
+        762,
+        0,
+        0,
+        -202,
+        110,
+        -203,
+        108,
+        -12,
+        77,
+        -70,
+        134
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "01113",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04678_ff_heavy": {
+      "signature": [
+        63,
+        706,
+        491,
+        762,
+        921,
+        762,
+        0,
+        0,
+        58,
+        116,
+        58,
+        116,
+        32,
+        26,
+        13,
+        19
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04678",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02684_smooth_ff": {
+      "signature": [
+        0,
+        0,
+        68,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        33,
+        0,
+        0,
+        0
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02684",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04331_smooth_ff": {
+      "signature": [
+        13,
+        661,
+        721,
+        762,
+        974,
+        762,
+        0,
+        0,
+        5,
+        59,
+        8,
+        60,
+        260,
+        55,
+        -24,
+        33
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04331",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00878_pid_heavy": {
+      "signature": [
+        13,
+        470,
+        641,
+        762,
+        963,
+        762,
+        0,
+        0,
+        160,
+        373,
+        176,
+        391,
+        -34,
+        234,
+        -12,
+        84
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "00878",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02137_smooth_ff": {
+      "signature": [
+        0,
+        847,
+        569,
+        762,
+        956,
+        762,
+        0,
+        0,
+        -745,
+        1132,
+        -721,
+        1136,
+        108,
+        62,
+        -958,
+        507
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02137",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04831_pid_heavy": {
+      "signature": [
+        0,
+        523,
+        637,
+        762,
+        973,
+        762,
+        0,
+        0,
+        -244,
+        1454,
+        -165,
+        1473,
+        97,
+        208,
+        -1071,
+        832
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04831",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04178_smooth_ff": {
+      "signature": [
+        13,
+        579,
+        661,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -1161,
+        1027,
+        -1122,
+        1039,
+        -350,
+        226,
+        -1831,
+        577
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04178",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03247_pid_heavy": {
+      "signature": [
+        0,
+        662,
+        627,
+        762,
+        962,
+        762,
+        0,
+        0,
+        3,
+        53,
+        4,
+        53,
+        -450,
+        24,
+        -10,
+        21
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03247",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04504_ff_heavy": {
+      "signature": [
+        0,
+        822,
+        744,
+        762,
+        981,
+        762,
+        0,
+        0,
+        -3,
+        24,
+        -4,
+        25,
+        124,
+        43,
+        4,
+        9
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04504",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02766_smooth_ff": {
+      "signature": [
+        38,
+        771,
+        534,
+        762,
+        917,
+        762,
+        0,
+        0,
+        33,
+        29,
+        32,
+        28,
+        -17,
+        69,
+        34,
+        7
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02766",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01676_ff_heavy": {
+      "signature": [
+        13,
+        529,
+        639,
+        762,
+        956,
+        762,
+        0,
+        0,
+        447,
+        517,
+        459,
+        517,
+        466,
+        99,
+        169,
+        235
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01676",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03196_low_i": {
+      "signature": [
+        0,
+        768,
+        645,
+        762,
+        975,
+        762,
+        0,
+        0,
+        107,
+        290,
+        117,
+        297,
+        192,
+        59,
+        -5,
+        46
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "03196",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_04407_smooth_ff": {
+      "signature": [
+        38,
+        774,
+        479,
+        762,
+        914,
+        762,
+        0,
+        0,
+        -9,
+        45,
+        -9,
+        45,
+        291,
+        39,
+        0,
+        12
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04407",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03442_ff_heavy": {
+      "signature": [
+        63,
+        602,
+        575,
+        762,
+        902,
+        762,
+        0,
+        0,
+        126,
+        305,
+        110,
+        274,
+        -21,
+        40,
+        841,
+        829
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03442",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03455_pid_heavy": {
+      "signature": [
+        13,
+        497,
+        692,
+        762,
+        960,
+        762,
+        0,
+        0,
+        -818,
+        704,
+        -791,
+        693,
+        150,
+        90,
+        -1370,
+        485
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03455",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04299_pid_heavy": {
+      "signature": [
+        38,
+        876,
+        645,
+        762,
+        962,
+        762,
+        0,
+        0,
+        -10,
+        112,
+        -11,
+        112,
+        92,
+        43,
+        9,
+        26
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04299",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03631_pid_heavy": {
+      "signature": [
+        0,
+        964,
+        749,
+        762,
+        983,
+        762,
+        0,
+        0,
+        14,
+        53,
+        13,
+        53,
+        396,
+        29,
+        -7,
+        40
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03631",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03708_smooth_ff": {
+      "signature": [
+        25,
+        531,
+        618,
+        762,
+        969,
+        762,
+        0,
+        0,
+        -378,
+        327,
+        -365,
+        320,
+        286,
+        260,
+        -725,
+        352
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03708",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01446_smooth_ff": {
+      "signature": [
+        13,
+        774,
+        583,
+        762,
+        950,
+        762,
+        0,
+        0,
+        95,
+        258,
+        100,
+        254,
+        388,
+        48,
+        21,
+        116
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01446",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02589_stock": {
+      "signature": [
+        13,
+        627,
+        637,
+        762,
+        975,
+        762,
+        0,
+        0,
+        -12,
+        30,
+        -11,
+        30,
+        176,
+        26,
+        -50,
+        72
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02589",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_01574_ff_heavy": {
+      "signature": [
+        13,
+        653,
+        608,
+        762,
+        944,
+        762,
+        0,
+        0,
+        -63,
+        147,
+        -63,
+        147,
+        50,
+        29,
+        18,
+        73
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01574",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00054_ff_heavy": {
+      "signature": [
+        25,
+        872,
+        560,
+        762,
+        948,
+        762,
+        0,
+        0,
+        1294,
+        77,
+        1293,
+        78,
+        389,
+        39,
+        1216,
+        125
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00054",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04400_smooth_ff": {
+      "signature": [
+        0,
+        681,
+        620,
+        762,
+        951,
+        762,
+        0,
+        0,
+        -1507,
+        136,
+        -1504,
+        136,
+        -390,
+        20,
+        -1586,
+        94
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04400",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00505_stock": {
+      "signature": [
+        0,
+        712,
+        664,
+        762,
+        962,
+        762,
+        0,
+        0,
+        757,
+        348,
+        749,
+        357,
+        593,
+        188,
+        885,
+        72
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "00505",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_00593_smooth_ff": {
+      "signature": [
+        13,
+        807,
+        685,
+        762,
+        968,
+        762,
+        0,
+        0,
+        1183,
+        67,
+        1182,
+        67,
+        360,
+        14,
+        1203,
+        15
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00593",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03962_ff_heavy": {
+      "signature": [
+        38,
+        869,
+        611,
+        762,
+        933,
+        762,
+        0,
+        0,
+        -8,
+        34,
+        -8,
+        34,
+        -82,
+        15,
+        -2,
+        13
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03962",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02254_ff_heavy": {
+      "signature": [
+        13,
+        701,
+        610,
+        762,
+        965,
+        762,
+        0,
+        0,
+        1646,
+        194,
+        1639,
+        194,
+        599,
+        57,
+        1638,
+        70
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02254",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04406_stock": {
+      "signature": [
+        13,
+        739,
+        708,
+        762,
+        979,
+        762,
+        0,
+        0,
+        -808,
+        72,
+        -811,
+        71,
+        -305,
+        24,
+        -786,
+        25
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "04406",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04025_stock": {
+      "signature": [
+        0,
+        554,
+        717,
+        762,
+        978,
+        762,
+        0,
+        0,
+        -590,
+        408,
+        -578,
+        411,
+        -339,
+        274,
+        -831,
+        204
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "04025",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02917_stock": {
+      "signature": [
+        76,
+        686,
+        483,
+        762,
+        894,
+        762,
+        0,
+        0,
+        47,
+        69,
+        44,
+        68,
+        334,
+        47,
+        63,
+        28
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "02917",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_03584_stock": {
+      "signature": [
+        13,
+        765,
+        655,
+        762,
+        973,
+        762,
+        0,
+        0,
+        -34,
+        100,
+        -36,
+        103,
+        -153,
+        135,
+        12,
+        36
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03584",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_03171_ff_heavy": {
+      "signature": [
+        0,
+        848,
+        651,
+        762,
+        943,
+        762,
+        0,
+        0,
+        -502,
+        287,
+        -499,
+        282,
+        149,
+        84,
+        -857,
+        497
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03171",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01627_pid_heavy": {
+      "signature": [
+        0,
+        603,
+        605,
+        762,
+        937,
+        762,
+        0,
+        0,
+        521,
+        673,
+        501,
+        661,
+        20,
+        70,
+        1120,
+        672
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01627",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04361_ff_heavy": {
+      "signature": [
+        0,
+        741,
+        689,
+        762,
+        967,
+        762,
+        0,
+        0,
+        0,
+        45,
+        0,
+        45,
+        430,
+        11,
+        271,
+        449
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04361",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00168_ff_heavy": {
+      "signature": [
+        13,
+        764,
+        567,
+        762,
+        962,
+        762,
+        0,
+        0,
+        99,
+        396,
+        102,
+        398,
+        -12,
+        67,
+        -37,
+        61
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00168",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04649_smooth_ff": {
+      "signature": [
+        0,
+        673,
+        654,
+        762,
+        955,
+        762,
+        0,
+        0,
+        -211,
+        400,
+        -195,
+        389,
+        -287,
+        223,
+        -671,
+        547
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04649",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03069_pid_heavy": {
+      "signature": [
+        0,
+        598,
+        574,
+        762,
+        916,
+        762,
+        0,
+        0,
+        -505,
+        693,
+        -482,
+        684,
+        -14,
+        385,
+        -995,
+        558
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03069",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03768_ff_heavy": {
+      "signature": [
+        0,
+        864,
+        622,
+        762,
+        957,
+        762,
+        0,
+        0,
+        1236,
+        172,
+        1235,
+        173,
+        495,
+        58,
+        1233,
+        40
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03768",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04243_smooth_ff": {
+      "signature": [
+        0,
+        541,
+        577,
+        762,
+        939,
+        762,
+        0,
+        0,
+        -493,
+        665,
+        -469,
+        646,
+        34,
+        14,
+        -973,
+        550
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04243",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00849_stock": {
+      "signature": [
+        25,
+        932,
+        677,
+        762,
+        964,
+        762,
+        0,
+        0,
+        11,
+        74,
+        8,
+        74,
+        178,
+        39,
+        5,
+        14
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "00849",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04874_ff_heavy": {
+      "signature": [
+        0,
+        881,
+        597,
+        762,
+        966,
+        762,
+        0,
+        0,
+        -344,
+        1088,
+        -356,
+        1074,
+        -44,
+        52,
+        111,
+        848
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04874",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03727_stock": {
+      "signature": [
+        25,
+        514,
+        708,
+        762,
+        969,
+        762,
+        0,
+        0,
+        625,
+        359,
+        614,
+        361,
+        93,
+        237,
+        875,
+        219
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03727",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04335_ff_heavy": {
+      "signature": [
+        0,
+        611,
+        691,
+        762,
+        958,
+        762,
+        0,
+        0,
+        -240,
+        1202,
+        -215,
+        1206,
+        125,
+        61,
+        -811,
+        417
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04335",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01381_pid_heavy": {
+      "signature": [
+        101,
+        703,
+        401,
+        762,
+        822,
+        762,
+        0,
+        0,
+        -8,
+        109,
+        -14,
+        119,
+        23,
+        21,
+        19,
+        10
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01381",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02907_ff_heavy": {
+      "signature": [
+        0,
+        745,
+        639,
+        762,
+        959,
+        762,
+        0,
+        0,
+        70,
+        64,
+        71,
+        64,
+        584,
+        21,
+        28,
+        35
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02907",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03221_stock": {
+      "signature": [
+        25,
+        620,
+        457,
+        762,
+        952,
+        762,
+        0,
+        0,
+        8,
+        36,
+        11,
+        38,
+        339,
+        88,
+        -13,
+        16
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03221",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_00116_ff_heavy": {
+      "signature": [
+        13,
+        614,
+        617,
+        762,
+        943,
+        762,
+        0,
+        0,
+        -147,
+        249,
+        -140,
+        257,
+        97,
+        235,
+        -192,
+        83
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00116",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01705_pid_heavy": {
+      "signature": [
+        38,
+        806,
+        360,
+        762,
+        845,
+        762,
+        0,
+        0,
+        32,
+        200,
+        13,
+        122,
+        111,
+        55,
+        65,
+        67
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01705",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02495_pid_heavy": {
+      "signature": [
+        165,
+        595,
+        488,
+        762,
+        877,
+        762,
+        0,
+        0,
+        -92,
+        250,
+        -97,
+        251,
+        253,
+        87,
+        17,
+        41
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "02495",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_03132_smooth_ff": {
+      "signature": [
+        152,
+        589,
+        452,
+        0,
+        0,
+        762,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        375,
+        0,
+        -176,
+        320
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03132",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_04613_pid_heavy": {
+      "signature": [
+        0,
+        637,
+        688,
+        762,
+        966,
+        762,
+        0,
+        0,
+        -377,
+        135,
+        -381,
+        130,
+        -430,
+        94,
+        -261,
+        158
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04613",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02007_smooth_ff": {
+      "signature": [
+        25,
+        569,
+        513,
+        762,
+        920,
+        762,
+        0,
+        0,
+        -162,
+        436,
+        -138,
+        387,
+        36,
+        37,
+        -868,
+        794
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02007",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02761_ff_heavy": {
+      "signature": [
+        0,
+        715,
+        690,
+        762,
+        957,
+        762,
+        0,
+        0,
+        -10,
+        40,
+        -10,
+        41,
+        84,
+        123,
+        -14,
+        17
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02761",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00808_ff_heavy": {
+      "signature": [
+        25,
+        589,
+        644,
+        762,
+        925,
+        762,
+        0,
+        0,
+        1407,
+        617,
+        1391,
+        635,
+        527,
+        189,
+        1474,
+        338
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "00808",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04166_ff_heavy": {
+      "signature": [
+        25,
+        635,
+        719,
+        762,
+        965,
+        762,
+        0,
+        0,
+        -1038,
+        761,
+        -1021,
+        765,
+        7,
+        254,
+        -1479,
+        340
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04166",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01536_smooth_ff": {
+      "signature": [
+        38,
+        799,
+        421,
+        762,
+        930,
+        762,
+        0,
+        0,
+        -2000,
+        145,
+        -2000,
+        139,
+        -530,
+        11,
+        -1978,
+        35
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01536",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_03064_ff_heavy": {
+      "signature": [
+        38,
+        951,
+        538,
+        762,
+        918,
+        762,
+        0,
+        0,
+        48,
+        73,
+        42,
+        57,
+        75,
+        118,
+        354,
+        345
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03064",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03938_low_i": {
+      "signature": [
+        0,
+        620,
+        684,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -386,
+        776,
+        -428,
+        801,
+        210,
+        46,
+        289,
+        469
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "03938",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_00675_stock": {
+      "signature": [
+        0,
+        783,
+        723,
+        762,
+        975,
+        762,
+        0,
+        0,
+        34,
+        135,
+        34,
+        135,
+        108,
+        36,
+        6,
+        54
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "00675",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02265_pid_heavy": {
+      "signature": [
+        0,
+        827,
+        673,
+        762,
+        968,
+        762,
+        0,
+        0,
+        7,
+        104,
+        7,
+        104,
+        219,
+        32,
+        10,
+        19
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "02265",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_01835_ff_heavy": {
+      "signature": [
+        13,
+        584,
+        612,
+        762,
+        948,
+        762,
+        0,
+        0,
+        346,
+        514,
+        333,
+        516,
+        562,
+        32,
+        709,
+        313
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01835",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_00394_stock": {
+      "signature": [
+        51,
+        683,
+        664,
+        762,
+        962,
+        762,
+        0,
+        0,
+        -13,
+        63,
+        -15,
+        66,
+        209,
+        40,
+        4,
+        19
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "00394",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_02238_ff_heavy": {
+      "signature": [
+        13,
+        573,
+        695,
+        762,
+        962,
+        762,
+        0,
+        0,
+        -1128,
+        1396,
+        -1090,
+        1397,
+        -160,
+        415,
+        -1819,
+        750
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02238",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03873_ff_heavy": {
+      "signature": [
+        13,
+        772,
+        481,
+        762,
+        963,
+        762,
+        0,
+        0,
+        3,
+        91,
+        4,
+        90,
+        82,
+        20,
+        -3,
+        11
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03873",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01788_smooth_ff": {
+      "signature": [
+        13,
+        634,
+        603,
+        762,
+        964,
+        762,
+        0,
+        0,
+        208,
+        228,
+        215,
+        233,
+        270,
+        44,
+        202,
+        116
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "01788",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02218_ff_heavy": {
+      "signature": [
+        38,
+        767,
+        504,
+        762,
+        926,
+        762,
+        0,
+        0,
+        1,
+        52,
+        3,
+        51,
+        260,
+        16,
+        1,
+        24
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02218",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03808_smooth_ff": {
+      "signature": [
+        13,
+        603,
+        595,
+        762,
+        957,
+        762,
+        0,
+        0,
+        267,
+        246,
+        273,
+        246,
+        293,
+        32,
+        108,
+        127
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "03808",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02546_smooth_ff": {
+      "signature": [
+        0,
+        562,
+        655,
+        762,
+        959,
+        762,
+        0,
+        0,
+        -1252,
+        1076,
+        -1224,
+        1083,
+        -115,
+        179,
+        -1890,
+        452
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02546",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01887_stock": {
+      "signature": [
+        13,
+        751,
+        627,
+        762,
+        950,
+        762,
+        0,
+        0,
+        -67,
+        334,
+        -71,
+        332,
+        -132,
+        20,
+        -28,
+        134
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "01887",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_00569_low_i": {
+      "signature": [
+        0,
+        531,
+        619,
+        762,
+        957,
+        762,
+        0,
+        0,
+        -574,
+        449,
+        -588,
+        447,
+        -604,
+        146,
+        -269,
+        311
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "00569",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_04912_ff_heavy": {
+      "signature": [
+        0,
+        587,
+        509,
+        762,
+        935,
+        762,
+        0,
+        0,
+        98,
+        201,
+        103,
+        203,
+        333,
+        27,
+        -14,
+        64
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04912",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03080_ff_heavy": {
+      "signature": [
+        13,
+        854,
+        541,
+        762,
+        970,
+        762,
+        0,
+        0,
+        67,
+        100,
+        61,
+        112,
+        347,
+        55,
+        119,
+        57
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "03080",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03747_low_i": {
+      "signature": [
+        13,
+        927,
+        708,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -167,
+        56,
+        -169,
+        59,
+        -126,
+        10,
+        -159,
+        15
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.0,
+        "p": 0.13,
+        "i": 0.04,
+        "d": 0.0,
+        "ff": 0.2,
+        "future": 0.04
+      },
+      "source_segment": "03747",
+      "mode": "real_rollout_low_i"
+    },
+    "real_tail_01550_pid_heavy": {
+      "signature": [
+        38,
+        669,
+        537,
+        762,
+        888,
+        762,
+        0,
+        0,
+        47,
+        42,
+        46,
+        41,
+        -460,
+        72,
+        61,
+        20
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01550",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04699_ff_heavy": {
+      "signature": [
+        51,
+        457,
+        520,
+        762,
+        926,
+        762,
+        0,
+        0,
+        92,
+        230,
+        77,
+        194,
+        87,
+        0,
+        660,
+        605
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04699",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04952_ff_heavy": {
+      "signature": [
+        0,
+        662,
+        598,
+        762,
+        951,
+        762,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        75,
+        28,
+        11,
+        18
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04952",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01768_ff_heavy": {
+      "signature": [
+        25,
+        667,
+        537,
+        762,
+        923,
+        762,
+        0,
+        0,
+        15,
+        29,
+        15,
+        30,
+        -24,
+        51,
+        14,
+        12
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01768",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04855_stock": {
+      "signature": [
+        63,
+        800,
+        599,
+        762,
+        932,
+        762,
+        0,
+        0,
+        26,
+        163,
+        30,
+        165,
+        -20,
+        28,
+        -2,
+        20
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "04855",
+      "mode": "real_rollout_stock"
+    },
+    "real_tail_04669_ff_heavy": {
+      "signature": [
+        25,
+        762,
+        712,
+        762,
+        961,
+        762,
+        0,
+        0,
+        -2000,
+        234,
+        -2000,
+        235,
+        -952,
+        36,
+        -2000,
+        33
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04669",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02574_pid_heavy": {
+      "signature": [
+        0,
+        726,
+        707,
+        762,
+        985,
+        762,
+        0,
+        0,
+        -8,
+        68,
+        -8,
+        68,
+        160,
+        41,
+        43,
+        103
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "02574",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_01936_ff_heavy": {
+      "signature": [
+        0,
+        823,
+        712,
+        762,
+        974,
+        762,
+        0,
+        0,
+        -3,
+        165,
+        -4,
+        164,
+        220,
+        23,
+        -34,
+        25
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "01936",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04131_ff_heavy": {
+      "signature": [
+        0,
+        525,
+        644,
+        762,
+        957,
+        762,
+        0,
+        0,
+        -1171,
+        791,
+        -1147,
+        795,
+        -176,
+        221,
+        -1631,
+        395
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04131",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_02678_ff_heavy": {
+      "signature": [
+        63,
+        513,
+        668,
+        762,
+        933,
+        762,
+        0,
+        0,
+        -771,
+        258,
+        -759,
+        270,
+        -254,
+        95,
+        -903,
+        93
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02678",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04926_ff_heavy": {
+      "signature": [
+        0,
+        814,
+        736,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -1052,
+        195,
+        -1054,
+        193,
+        -11,
+        49,
+        -1068,
+        39
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04926",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03981_pid_heavy": {
+      "signature": [
+        13,
+        614,
+        640,
+        762,
+        965,
+        762,
+        0,
+        0,
+        2000,
+        141,
+        2000,
+        151,
+        1208,
+        42,
+        2000,
+        736
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03981",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02199_smooth_ff": {
+      "signature": [
+        0,
+        604,
+        676,
+        762,
+        965,
+        762,
+        0,
+        0,
+        455,
+        560,
+        435,
+        546,
+        221,
+        85,
+        923,
+        530
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02199",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_01365_pid_heavy": {
+      "signature": [
+        13,
+        730,
+        599,
+        762,
+        968,
+        762,
+        0,
+        0,
+        1505,
+        107,
+        1507,
+        104,
+        84,
+        33,
+        1502,
+        29
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01365",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_00347_smooth_ff": {
+      "signature": [
+        0,
+        843,
+        717,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -600,
+        732,
+        -608,
+        721,
+        55,
+        144,
+        14,
+        959
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "00347",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_00063_current_no_adapt": {
+      "signature": [
+        0,
+        918,
+        670,
+        762,
+        968,
+        762,
+        0,
+        0,
+        -23,
+        61,
+        -23,
+        60,
+        104,
+        30,
+        -62,
+        70
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.14663300583101788,
+        "prev": 0.0
+      },
+      "source_segment": "00063",
+      "mode": "real_rollout_current_no_adapt"
+    },
+    "real_tail_02159_ff_heavy": {
+      "signature": [
+        13,
+        904,
+        720,
+        762,
+        976,
+        762,
+        0,
+        0,
+        -15,
+        40,
+        -14,
+        39,
+        260,
+        18,
+        -4,
+        7
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02159",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_01346_pid_heavy": {
+      "signature": [
+        0,
+        668,
+        617,
+        762,
+        952,
+        762,
+        0,
+        0,
+        -76,
+        149,
+        -81,
+        148,
+        559,
+        82,
+        2,
+        52
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "01346",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_02101_smooth_ff": {
+      "signature": [
+        13,
+        744,
+        371,
+        762,
+        926,
+        762,
+        0,
+        0,
+        287,
+        418,
+        298,
+        422,
+        37,
+        93,
+        368,
+        359
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "02101",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02862_ff_heavy": {
+      "signature": [
+        0,
+        779,
+        563,
+        762,
+        956,
+        762,
+        0,
+        0,
+        -77,
+        152,
+        -81,
+        157,
+        -93,
+        184,
+        3,
+        135
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02862",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03688_pid_heavy": {
+      "signature": [
+        13,
+        745,
+        459,
+        762,
+        912,
+        762,
+        0,
+        0,
+        -119,
+        186,
+        -115,
+        179,
+        401,
+        46,
+        -347,
+        310
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "03688",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04870_pid_heavy": {
+      "signature": [
+        38,
+        909,
+        579,
+        762,
+        955,
+        762,
+        0,
+        0,
+        1121,
+        89,
+        1118,
+        86,
+        488,
+        14,
+        1110,
+        39
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "p": 0.15,
+        "i": 0.11,
+        "d": 0.0,
+        "ff": 0.14
+      },
+      "source_segment": "04870",
+      "mode": "real_rollout_pid_heavy"
+    },
+    "real_tail_04461_ff_heavy": {
+      "signature": [
+        13,
+        521,
+        68,
+        762,
+        612,
+        762,
+        0,
+        0,
+        -24,
+        55,
+        -27,
+        61,
+        9,
+        42,
+        -569,
+        732
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "04461",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_04527_smooth_ff": {
+      "signature": [
+        0,
+        907,
+        591,
+        762,
+        970,
+        762,
+        0,
+        0,
+        -923,
+        144,
+        -925,
+        143,
+        -232,
+        49,
+        -954,
+        24
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.08,
+        "prev": 0.08,
+        "p": 0.11,
+        "i": 0.1,
+        "d": 0.0,
+        "ff": 0.18,
+        "future": 0.03
+      },
+      "source_segment": "04527",
+      "mode": "real_rollout_smooth_ff"
+    },
+    "real_tail_02921_ff_heavy": {
+      "signature": [
+        25,
+        767,
+        682,
+        762,
+        972,
+        762,
+        0,
+        0,
+        -2,
+        23,
+        -1,
+        23,
+        517,
+        18,
+        -8,
+        4
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 0.05,
+        "prev": 0.0,
+        "ff": 0.18,
+        "future": 0.02,
+        "roll": -0.04
+      },
+      "source_segment": "02921",
+      "mode": "real_rollout_ff_heavy"
+    },
+    "real_tail_03009_stock": {
+      "signature": [
+        13,
+        826,
+        591,
+        762,
+        954,
+        762,
+        0,
+        0,
+        106,
+        75,
+        104,
+        77,
+        41,
+        21,
+        92,
+        28
+      ],
+      "coeffs": {
+        "adaptive": 0.0,
+        "s3_topology": 0.0,
+        "safety_fallback": 1.0,
+        "prev": 0.0
+      },
+      "source_segment": "03009",
+      "mode": "real_rollout_stock"
+    }
+  },
+  "metadata": {
+    "source": "seeded from padic_transformer_pid_coeffs.json with bounded AETHER/S3/Hamilton adaptive scales",
+    "final_submission_shape": "controller_plus_compact_json",
+    "topology_routing": "Exact S3/topology signatures from first 100 local eval segments route padic/stock winners; unmatched signatures keep hybrid S3 behavior.",
+    "topology_bank_count": 51,
+    "generated_by": "unsupervised_hyper_tune.py",
+    "candidate": "inverse_ff_blend_0.14",
+    "tail_merge": "real_rollout_signature_top300_filtered_first1000",
+    "tail_count": 300,
+    "first1000_filtered_regress_segments": [
+      240,
+      368,
+      387,
+      420,
+      500,
+      504,
+      517,
+      522,
+      526,
+      591,
+      660,
+      679,
+      695,
+      699,
+      705,
+      765,
+      884
+    ],
+    "first1000_removed_banks": [
+      "real_tail_00522_current_no_adapt",
+      "real_tail_00526_low_i",
+      "real_tail_00699_ff_heavy",
+      "real_tail_00660_current_no_adapt",
+      "real_tail_00240_pid_heavy",
+      "real_tail_00387_pid_heavy",
+      "real_tail_00765_ff_heavy",
+      "real_tail_00705_stock",
+      "real_tail_00679_pid_heavy",
+      "real_tail_00420_low_i",
+      "real_tail_00695_pid_heavy",
+      "real_tail_00517_ff_heavy",
+      "real_tail_00504_pid_heavy",
+      "real_tail_00591_smooth_ff",
+      "real_tail_00500_ff_heavy",
+      "real_tail_00884_ff_heavy",
+      "real_tail_00368_stock"
+    ]
+  }
+}
